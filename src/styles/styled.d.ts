@@ -1,5 +1,12 @@
 import 'styled-components';
-import { colors, spacing, radius, shadow, typography } from '../styles/tokens';
+import {
+  colors,
+  spacing,
+  radius,
+  shadow,
+  typography,
+  layout,
+} from '../styles/tokens';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -8,5 +15,6 @@ declare module 'styled-components' {
     radius: typeof radius;
     shadow: typeof shadow;
     typography: typeof typography;
+    layout: typeof layout;
   }
 }

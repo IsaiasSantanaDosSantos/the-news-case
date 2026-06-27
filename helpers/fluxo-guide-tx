@@ -1,0 +1,490 @@
+# Primeiro: finalizar a branch atual
+
+```bash
+git checkout main
+git pull origin main
+git merge setup-project
+git push origin main
+```
+
+Depois crie a primeira branch.
+
+---
+
+# Roadmap completo
+
+Eu dividiria o projeto em **9 etapas**.
+
+Assim o histórico fica extremamente profissional.
+
+---
+
+# 1. Estrutura da aplicação
+
+## Branch
+
+```
+feature/app-shell
+```
+
+## Objetivo
+
+Criar toda a estrutura que será utilizada pelas duas páginas.
+
+### Implementar
+
+- Layout principal
+- Router
+- ThemeProvider
+- Layout Mobile
+- Container
+- Page
+- AppHeader
+- Navegação
+- estrutura de pastas definitiva
+
+Nada visual das telas ainda.
+
+---
+
+## Commit
+
+```
+feat: create application shell and base layout
+```
+
+---
+
+## PR
+
+### Título
+
+```
+feat: application shell
+```
+
+### Descrição
+
+```
+## Objetivo
+
+Criar a estrutura base da aplicação.
+
+## Implementado
+
+- Router
+- Layout principal
+- ThemeProvider
+- Estrutura de páginas
+- Componentes base
+
+## Resultado
+
+Aplicação preparada para receber as funcionalidades.
+```
+
+---
+
+# 2. Design System
+
+## Branch
+
+```
+feature/design-system
+```
+
+Aqui você cria tudo reutilizável.
+
+### Componentes
+
+```
+Button
+
+IconButton
+
+Badge
+
+Chip
+
+Avatar
+
+Card
+
+Divider
+
+Tag
+
+Typography
+
+Icon
+
+EmptyState
+
+Skeleton
+
+```
+
+Se algum componente ainda não for usado, tudo bem.
+
+Isso demonstra maturidade.
+
+Também incluir:
+
+```
+Spacing
+
+Radius
+
+Elevation
+
+Animation
+
+Transitions
+
+```
+
+---
+
+Commit
+
+```
+feat: build reusable design system
+```
+
+---
+
+PR
+
+```
+feat: reusable design system
+```
+
+---
+
+# 3. Componentes compartilhados
+
+## Branch
+
+```
+feature/shared-components
+```
+
+Agora entram componentes específicos do produto.
+
+Exemplo:
+
+```
+NewsCard
+
+EventCard
+
+SectionHeader
+
+CategoryChip
+
+BottomNavigation
+
+SearchBar
+
+FilterTabs
+
+ProgressIndicator
+
+```
+
+Observe que eles pertencem ao domínio do app.
+
+---
+
+Commit
+
+```
+feat: add shared product components
+```
+
+---
+
+PR
+
+```
+feat: shared application components
+```
+
+---
+
+# 4. Página News
+
+Agora sim.
+
+## Branch
+
+```
+feature/news-page
+```
+
+Implementar:
+
+```
+Header
+
+Lista
+
+Cards
+
+Categorias
+
+Loading
+
+Empty
+
+Erro
+
+Responsividade
+
+```
+
+---
+
+Commit
+
+```
+feat: implement news page
+```
+
+---
+
+PR
+
+```
+feat: news page
+```
+
+---
+
+# 5. Página Events
+
+## Branch
+
+```
+feature/events-page
+```
+
+Implementar
+
+```
+Header
+
+Eventos
+
+Cards
+
+Filtros
+
+Status
+
+Loading
+
+```
+
+---
+
+Commit
+
+```
+feat: implement events page
+```
+
+---
+
+PR
+
+```
+feat: events page
+```
+
+---
+
+# 6. Interações
+
+## Branch
+
+```
+feature/user-interactions
+```
+
+Aqui entram coisas como:
+
+```
+Hover
+
+Press
+
+Focus
+
+Transitions
+
+Animações
+
+Estados
+
+```
+
+---
+
+Commit
+
+```
+feat: improve user interactions
+```
+
+---
+
+# 7. Acessibilidade
+
+## Branch
+
+```
+feature/accessibility
+```
+
+Adicionar
+
+```
+aria-label
+
+roles
+
+keyboard
+
+focus
+
+contraste
+
+```
+
+Como a vaga enfatiza acessibilidade, isso mostra bastante cuidado.
+
+---
+
+Commit
+
+```
+feat: improve accessibility
+```
+
+---
+
+# 8. Performance
+
+## Branch
+
+```
+feature/performance
+```
+
+Implementar
+
+```
+memo
+
+lazy
+
+Suspense
+
+code splitting
+
+imagens
+
+```
+
+---
+
+Commit
+
+```
+perf: optimize rendering performance
+```
+
+---
+
+# 9. Polimento final
+
+## Branch
+
+```
+chore/final-polish
+```
+
+Aqui você revisa absolutamente tudo.
+
+Checklist
+
+- remover código morto
+- remover console.log
+- revisar eslint
+- revisar prettier
+- revisar nomes
+- revisar componentes
+- revisar responsividade
+- revisar animações
+- README
+- screenshots
+- deploy
+
+---
+
+Commit
+
+```
+chore: finalize project for delivery
+```
+
+---
+
+# Merge final
+
+No final:
+
+```
+main
+│
+├── chore: setup base project
+│
+├── feat: application shell
+│
+├── feat: build reusable design system
+│
+├── feat: shared product components
+│
+├── feat: implement news page
+│
+├── feat: implement events page
+│
+├── feat: improve user interactions
+│
+├── feat: improve accessibility
+│
+├── perf: optimize rendering performance
+│
+└── chore: finalize project for delivery
+```
+
+---
+
+# O que eu faria diferente (e que pode impressionar ainda mais)
+
+Como esse é um case para uma vaga que destaca tanto **Front-end quanto Design**, eu faria uma pequena adaptação na ordem:
+
+1. `feature/app-shell`
+2. `feature/design-system`
+3. `feature/news-page` (criando apenas os componentes realmente necessários para a News)
+4. `feature/events-page` (reaproveitando e extraindo componentes compartilhados conforme surgirem)
+5. `feature/accessibility`
+6. `feature/performance`
+7. `chore/final-polish`
+
+Em vez de tentar prever todos os componentes compartilhados desde o início, você os extrai quando percebe reutilização real entre as duas telas. Essa abordagem evita abstrações prematuras, mantém os commits mais focados e demonstra uma prática bastante valorizada em times experientes: **abstrair somente quando houver uma necessidade concreta**.
+
+Pela descrição da vaga, que enfatiza componentes reutilizáveis, design system, atenção aos detalhes e colaboração entre design e desenvolvimento, esse fluxo comunica maturidade tanto técnica quanto de produto.
+
+Eu seguiria exatamente esse caminho para maximizar a qualidade técnica e também transmitir um processo de trabalho consistente durante a avaliação do case.

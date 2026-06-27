@@ -9,6 +9,19 @@ export default createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.background};
-    font-family: sans-serif;
+    color: ${({ theme }) => theme.colors.text.primary};
+
+    font-family: ${({ theme }) => theme.typography.fontFamily.sans};
+
+    line-height: ${({ theme }) => theme.typography.lineHeight.normal};
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
   }
 `;

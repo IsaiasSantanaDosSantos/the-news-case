@@ -1,11 +1,5 @@
-import './App.css';
+import AppRoutes from '@/routes';
 
-function App() {
-  return (
-    <>
-      <h1>The News Case project</h1>
-    </>
-  );
+export default function App() {
+  return <AppRoutes />;
 }
-
-export default App;
