@@ -33,14 +33,14 @@ Antes do redesign foi realizada uma análise do aplicativo para identificar opor
 
 ## Problemas encontrados
 
-| Problema | Impacto |
-|-----------|----------|
-| Navegação inconsistente entre telas | Alto |
-| Header excessivamente grande na tela Notícias | Alto |
-| Falta de consistência da Bottom Navigation | Alto |
-| Duplicidade de navegação na tela Evento | Alto |
-| Inconsistência entre Dark Mode e Light Mode na tela Podcast | Médio |
-| Pequenos problemas de espaçamento e hierarquia | Médio |
+| Problema                                                    | Impacto |
+| ----------------------------------------------------------- | ------- |
+| Navegação inconsistente entre telas                         | Alto    |
+| Header excessivamente grande na tela Notícias               | Alto    |
+| Falta de consistência da Bottom Navigation                  | Alto    |
+| Duplicidade de navegação na tela Evento                     | Alto    |
+| Inconsistência entre Dark Mode e Light Mode na tela Podcast | Médio   |
+| Pequenos problemas de espaçamento e hierarquia              | Médio   |
 
 ---
 
@@ -217,7 +217,7 @@ O redesign foi implementado utilizando:
 - TypeScript
 - Vite
 - React Router
-- CSS Modules *(ou Tailwind, dependendo da escolha)*
+- CSS Modules _(ou Tailwind, dependendo da escolha)_
 
 A implementação buscou reproduzir fielmente o design criado no Figma, mantendo foco em componentização, reutilização e acessibilidade.
 
@@ -285,19 +285,19 @@ Entre elas:
 
 ## 🎨 Figma
 
-Link: "Figma design"[https://www.figma.com/design/lDGjv0wIOAR1q2ZCxjUF4Y/screen?node-id=0-1&p=f&t=x1qwctDdxD4DTn4G-0]
+Link: [Figma design](https://www.figma.com/design/lDGjv0wIOAR1q2ZCxjUF4Y/screen?node-id=0-1&p=f&t=x1qwctDdxD4DTn4G-0)
 
 ---
 
 ## 💻 Repositório
 
-Link: "The News case"[https://github.com/IsaiasSantanaDosSantos/the-news-case]
+Link: [The News case](https://github.com/IsaiasSantanaDosSantos/the-news-case)
 
 ---
 
 ## 🌐 Deploy
 
-Link: "The News Case app"[https://the-news-case-pi.vercel.app/]
+Link: [The News Case app](https://the-news-case-pi.vercel.app/)
 
 ---
 
