@@ -285,19 +285,19 @@ Entre elas:
 
 ## 🎨 Figma
 
-(Link)
+Link: "Figma design"[https://www.figma.com/design/lDGjv0wIOAR1q2ZCxjUF4Y/screen?node-id=0-1&p=f&t=x1qwctDdxD4DTn4G-0]
 
 ---
 
 ## 💻 Repositório
 
-(Link)
+Link: "The News case"[https://github.com/IsaiasSantanaDosSantos/the-news-case]
 
 ---
 
 ## 🌐 Deploy
 
-(Link)
+Link: "The News Case app"[https://the-news-case-pi.vercel.app/]
 
 ---
 
