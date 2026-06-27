@@ -1,0 +1,80 @@
+Desenvolvedor de front-end
+
+Brazil · 3 days ago · Over 100 people clicked apply
+
+Promoted by hirer · Responses managed off LinkedIn
+
+Remote
+Full-time
+No longer accepting applications
+
+Use AI to assess how you fit
+Get AI-powered advice on this job and more exclusive features with Premium. Try Premium for R$0
+
+Show match details
+
+Tailor my resume
+
+Help me stand out
+
+About the job
+the news | VAGA DEV FRONT-END & DESIGN
+
+
+
+Estamos em busca de uma pessoa que sente calafrios quando vê uma interface mal construída — e não consegue deixar passar.
+
+Essa pessoa será responsável por transformar ideias, specs e dados em experiências digitais que os nossos leitores realmente querem usar. Aqui, front-end não é só código que roda — é tipografia certa, hierarquia visual, componente que faz sentido e detalhe que ninguém notou que estava errado até você consertar.
+
+Se você transita bem entre Figma e VS Code, tem opinião sobre espaçamento e consegue explicar por que aquela cor não era a certa, essa vaga é pra você.
+
+
+
+Responsibilities and assignments 🧱
+
+Desenvolver interfaces web e mobile em parceria com design e produto, do wireframe ao deploy;
+Traduzir especificações de design em componentes reutilizáveis, acessíveis e performáticos;
+Participar ativamente das decisões de UX, trazendo viabilidade técnica para a mesa;
+Manter e evoluir o design system do the news, garantindo consistência entre plataformas;
+Colaborar com o time de produto na priorização e refinamento de features visuais;
+Revisar interfaces com foco em responsividade, acessibilidade e experiência real do usuário;
+Garantir que o que está na tela seja o que foi pensado — sem margem para “tá bom assim”.
+
+
+O que buscamos nessa pessoa? 🧠
+
+Domínio de HTML, CSS e JavaScript moderno (React, TypeScript);
+Olho afiado para design: entende de grid, tipografia, hierarquia e cor;
+Familiaridade com Figma e capacidade de trabalhar direto a partir de componentes;
+Atenção obsessiva a detalhe visual e de interação;
+Capacidade de questionar decisões de design com argumentos técnicos e de experiência;
+Comunicação clara para alinhar com produto, design e backend.
+
+
+O que pode ser um diferencial? 👍
+
+Experiência com Framer, motion design ou animações CSS;
+Contribuições em design systems ou bibliotecas open source;
+Conhecimento em acessibilidade (WCAG);
+Interesse ou experiência com apps mobile (React Native);
+Portfólio com projetos que mostrem cuidado visual, não só funcionalidade.
+
+
+Como enxergamos o trabalho? 🎯
+
+Ambição: Buscamos sempre fazer melhor do que ontem.
+Humildade: Aprendemos com erros, feedbacks e com o time.
+Responsabilidade: Cada pessoa é dona das suas entregas.
+Positividade: Resolver problemas faz parte — drama não.
+Clareza no Propósito: Tudo o que fazemos tem um porquê claro.
+
+
+O que oferecemos 🏭
+
+Horário flexível;
+Escritório em São Paulo;
+Salário compatível com o mercado;
+Bônus semestral por performance;
+Benefícios (Vale Transporte, VA e WellHub);
+Plano de desenvolvimento de carreira;
+Apoio financeiro para desenvolvimento técnico (cursos, mentorias e capacitações).

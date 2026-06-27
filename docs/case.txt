@@ -1,0 +1,80 @@
+# Case Processo Seletivo — Dev Front-end & Design
+
+## Sobre o processo
+
+Este case é a etapa prática do processo seletivo para **Dev Front-end & Design** do the news.
+
+Não avaliamos só o resultado — avaliamos o raciocínio por trás de cada escolha visual e como você constrói com consistência a partir de um briefing aberto.
+
+---
+
+## Sobre o the news
+
+O the news é a maior newsletter de notícias do Brasil, com mais de 3 milhões de assinantes. Temos também um app com funcionalidades de engajamento diário — como o **Hábito** (streak de leitura), o bolão da Copa e leitura de edições.
+
+O app tem espaço para evoluir: algumas telas poderiam reter melhor, engajar mais, comunicar com mais clareza. É aí que você entra.
+
+---
+
+## O desafio
+
+> **Escolha pelo menos 2 telas do app do the news que você acredita que trariam mais impacto se fossem redesenhadas — e redesenhe-as.**
+> 
+
+A escolha em si já é parte da avaliação. Queremos ver onde você enxerga oportunidade, não só como você executa.
+
+Explore o app antes de decidir. Baixe na App Store ou Google Play e navegue com olhar crítico.
+
+### Entrega 1 — O design
+
+Crie as telas redesenhadas na ferramenta de design de sua preferência — Figma, Framer, Adobe XD, Penpot ou qualquer outra. Mínimo: 2 telas com estados principais. Opcional: estados adicionais, fluxo de navegação entre elas.
+
+### Entrega 2 — Decisões de design
+
+Documente suas escolhas. Queremos entender o raciocínio, não só ver o resultado. Responda:
+
+- Por que essas telas e não outras? Qual o impacto que você acredita que elas teriam?
+- Por que essas escolhas de cor, hierarquia e tipografia?
+- Qual era a tensão mais difícil de resolver e como você resolveu?
+
+### Entrega 3 — Autocrítica
+
+O que você faria diferente se tivesse mais 1 dia? O que ficou aberto, o que você não gostou, o que testaria a seguir?
+
+*Quem responde isso com profundidade revela mais sobre como pensa do que quem entrega uma tela perfeita sem questionar nada.*
+
+---
+
+## Entregáveis
+
+1. **Link do arquivo de design** com permissão de visualização (Figma, Framer, Adobe XD ou similar) — arquivo com componentes organizados
+2. **Documento de decisões** (pode ser página dentro do próprio Figma, Notion, Google Docs ou similar) com respostas às 3 perguntas acima
+
+### Bônus
+
+- Implementação funcional em React com as telas responsivas para mobile
+- Subir em qualquer host (Vercel, Netlify, etc.) e incluir o link
+
+---
+
+## O que vamos avaliar
+
+| Critério | O que estamos vendo |
+| --- | --- |
+| **Escolha das telas** | A pessoa enxerga onde está o impacto real ou escolheu o óbvio? |
+| **Coerência visual** | Paleta, tipografia e espaçamento se sustentam juntos? |
+| **Aderência à marca** | As telas poderiam ser do the news ou poderiam ser de qualquer app? |
+| **Raciocínio de design** | O documento revela pensamento ou só descreve o que está na tela? |
+| **Autocrítica** | A pessoa sabe o que não ficou bom no próprio trabalho? |
+
+---
+
+## Como entregar
+
+Consolide todos os entregáveis em um arquivo só e adicione no formulário — Pode ser Notion, Google Docs, PDF ou o que achar melhor. **Não esqueça de deixar aberto para podermos ver**
+
+Preencha o formulário abaixo com o seu link:
+
+**→ Acessar formulário de entrega**
+
+**Prazo:** 29 de junho de 2026

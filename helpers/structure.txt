@@ -1,0 +1,18 @@
+the-news-case/
+│
+├── docs/
+│   ├── README.md          ← Documento completo do case (o conteúdo acima)
+│   ├── images/
+│   │   ├── noticias-original.png
+│   │   ├── noticias-redesign.png
+│   │   ├── noticias-scroll.png
+│   │   ├── evento-original.png
+│   │   ├── evento-redesign.png
+│   │   └── evento-scroll.png
+│   └── figma-link.md      ← (Opcional, apenas com o link do Figma)
+│
+├── src/
+├── public/
+├── package.json
+├── vite.config.ts
+└── README.md              ← README enxuto para o projeto
