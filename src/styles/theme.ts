@@ -1,4 +1,4 @@
-import { colors, spacing, radius, shadow, typography } from './tokens';
+import { colors, spacing, radius, shadow, typography, layout } from './tokens';
 
 export const theme = {
   colors,
@@ -6,6 +6,7 @@ export const theme = {
   radius,
   shadow,
   typography,
+  layout,
 };
 
 export const lightTheme = {

@@ -72,18 +72,12 @@ export const typography = {
   },
 };
 
-export const lightTheme = {
-  colors: {
-    background: '#FFFFFF',
-    text: '#0B0B0F',
-    card: '#F9FAFB',
-  },
-};
+export const layout = {
+  maxWidth: '600px',
 
-export const darkTheme = {
-  colors: {
-    background: '#0B0B0F',
-    text: '#FFFFFF',
-    card: '#111318',
-  },
+  headerHeight: '64px',
+
+  bottomNavigationHeight: '72px',
+
+  contentMaxWidth: '480px',
 };
