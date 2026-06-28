@@ -17,6 +17,15 @@ export default createGlobalStyle`
 
     -webkit-font-smoothing: antialiased;
   }
+    html,
+body {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 
   button,
   input,

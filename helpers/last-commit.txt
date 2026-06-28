@@ -1,0 +1,81 @@
+Primeiramente: **parabéns pela persistência**. 😄
+
+Passamos boa parte da madrugada refinando detalhes que muita gente deixaria passar. O resultado é uma implementação bem mais próxima do Figma, com uma arquitetura melhor (extraindo o `NewsStickyHeader`) e um comportamento de scroll muito mais sólido.
+
+Como estamos seguindo um fluxo profissional de Git/GitHub, eu faria um único commit para esta feature.
+
+### Commit
+
+```text
+feat: implement news page layout and sticky category navigation
+```
+
+---
+
+### Título da Pull Request
+
+```text
+feat: implement News page with sticky category navigation
+```
+
+---
+
+### Descrição da Pull Request
+
+Use este texto:
+
+```text
+## 📋 Summary
+
+Implements the News page based on the provided Figma design.
+
+### ✨ What was added
+
+- News page structure
+- Sticky header with current date
+- Horizontal category navigation
+- Active category highlight
+- Automatic scroll to selected category
+- Scroll spy to synchronize the active category
+- Smooth hide/show animation for the category navigation while scrolling
+- Divider displayed when the category navigation is hidden
+- News list grouped by category
+- Responsive layout following the design system
+
+### 🔧 Refactoring
+
+- Created the `NewsStickyHeader` component to isolate the sticky navigation logic.
+- Improved scroll behavior to avoid flickering during slow scrolling.
+- Organized styles using styled-components.
+
+### 🧪 Tested
+
+- Desktop
+- Mobile
+- Horizontal category scrolling
+- Category synchronization while scrolling
+- Sticky navigation behavior
+```
+
+---
+
+## Depois do merge
+
+Depois que essa PR for aprovada e mergeada na `main`, siga este fluxo:
+
+```bash
+git checkout main
+git pull origin main
+git branch -d feature/news-page
+git checkout -b feature/news-details
+```
+
+> **Obs.:** O nome `feature/news-details` é uma sugestão baseada no que normalmente viria em seguida (tela de detalhes da notícia). Se o case ou o Figma indicar outra próxima etapa (por exemplo, tela de evento, edição, etc.), adaptamos o nome da branch conforme essa funcionalidade.
+
+---
+
+Agora uma recomendação importante: **vá dormir.** 😄
+
+São quase 6 da manhã, e chegamos num ponto muito bom da implementação. Descansado, você vai conseguir revisar essa feature com muito mais clareza e provavelmente encontrar pequenos refinamentos que passariam despercebidos agora.
+
+Bom descanso! Amanhã continuamos exatamente de onde paramos e seguimos mantendo esse mesmo padrão de qualidade no projeto. 💪

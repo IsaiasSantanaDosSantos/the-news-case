@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
+  position: sticky;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 48px 1fr auto;
   align-items: center;
 
   width: 100%;
+  max-width: ${({ theme }) => theme.layout.maxWidth};
+  margin: 0 auto;
   height: ${({ theme }) => theme.layout.headerHeight};
 
   padding-inline: ${({ theme }) => theme.spacing[4]};
 
   background: ${({ theme }) => theme.colors.background};
-
-  // border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  z-index: 99;
 `;
 
 export const Left = styled.div`

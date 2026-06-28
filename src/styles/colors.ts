@@ -1,14 +1,14 @@
 export const lightColors = {
   background: '#FFFFFF',
-  foreground: '#0B0B0F',
+  foreground: '#f3f2f7',
 
   text: {
     primary: '#0B0B0F',
     secondary: '#6B7280',
-    inverse: '#FFFFFF',
+    inverse: '#0B0B0F',
   },
 
-  primary: '#FBC02D',
+  primary: '#fed603',
   secondary: '#00000',
 
   border: '#E5E7EB',
@@ -19,16 +19,16 @@ export const lightColors = {
 };
 
 export const darkColors = {
-  background: '#0B0B0F',
-  foreground: '#FFFFFF',
+  background: '#000000',
+  foreground: '#1c1c1e;',
 
   text: {
     primary: '#FFFFFF',
     secondary: '#6B7280',
-    inverse: '#0B0B0F',
+    inverse: '#FFFFFF',
   },
 
-  primary: '#FBC02D',
+  primary: '#fed603',
   secondary: '#00000',
 
   border: '#374151',

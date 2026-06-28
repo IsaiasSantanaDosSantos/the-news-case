@@ -8,5 +8,5 @@ export const Wrapper = styled.main`
 
   background: ${({ theme }) => theme.colors.background};
 
-  padding-block: ${({ theme }) => theme.spacing[6]};
+  padding-bottom: 72px;
 `;
