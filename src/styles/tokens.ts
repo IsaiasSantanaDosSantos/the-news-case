@@ -2,8 +2,8 @@ export const colors = {
   background: '#FFFFFF',
   foreground: '#0B0B0F',
 
-  primary: '#FF3D71', // energia editorial / destaque
-  secondary: '#3D5AFE',
+  primary: '#FBC02D', // energia editorial / destaque
+  secondary: '#000000',
 
   text: {
     primary: '#0B0B0F',
@@ -45,7 +45,7 @@ export const shadow = {
 
 export const typography = {
   fontFamily: {
-    sans: "'Inter', sans-serif",
+    sans: 'sans-serif',
   },
 
   size: {
