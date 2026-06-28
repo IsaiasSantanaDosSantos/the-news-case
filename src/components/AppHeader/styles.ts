@@ -37,8 +37,9 @@ export const Center = styled.div`
   width: auto;
   height: 100%;
 
-  img {
+  svg {
     width: ${({ theme }) => theme.typography.size.lg};
+    fill: ${({ theme }) => theme.colors.primary};
     height: auto;
     aspect-ratio: 323/262;
   }
