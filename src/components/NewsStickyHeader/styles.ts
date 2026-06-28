@@ -12,9 +12,7 @@ export const Switcher = styled.div<{ $visible: boolean }>`
   position: relative;
 
   height: ${({ $visible }) => ($visible ? '58px' : '2px')};
-
   overflow: hidden;
-
   transition: height 300ms ease;
 
   background: ${({ theme }) => theme.colors.background};
@@ -22,16 +20,22 @@ export const Switcher = styled.div<{ $visible: boolean }>`
 
 export const Header = styled.header`
   position: sticky;
-  padding: 14px 0 10px;
+  padding: 0 0 10px;
 `;
 
 export const DateText = styled.span`
-  font-size: ${({ theme }) => theme.typography.size.sm};
+  font-size: 33px;
   text-transform: capitalize;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text.primary};
+  text-transform: lowercase;
+  font-weight: ${({ theme }) => theme.typography.weight.bold};
+  line-height: ${({ theme }) => theme.typography.lineHeight.tight};
+  letter-spacing: -1px;
 `;
 
-export const CategoryBar = styled.div<{ $visible: boolean }>`
+export const CategoryBar = styled.div.attrs({
+  role: 'tablist',
+})<{ $visible: boolean }>`
   position: absolute;
 
   inset: 0;
@@ -103,6 +107,19 @@ export const CategoryButton = styled.button<{ $active: boolean }>`
     $active ? theme.colors.background : theme.colors.text.primary};
 
   transition: 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: ${({ theme }) => theme.spacing[1]};
+
+  svg {
+    transition: 0.2s;
+    width: 12px;
+    height: 12px;
+    fill: ${({ $active, theme }) =>
+      $active ? theme.colors.background : theme.colors.text.primary};
+  }
 `;
 
 export const Section = styled.section`

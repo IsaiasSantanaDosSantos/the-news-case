@@ -9,6 +9,8 @@ export const Wrapper = styled.header`
   align-items: center;
 
   width: 100%;
+  max-width: ${({ theme }) => theme.layout.maxWidth};
+  margin: 0 auto;
   height: ${({ theme }) => theme.layout.headerHeight};
 
   padding-inline: ${({ theme }) => theme.spacing[4]};

@@ -1,31 +1,26 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useMemo, useState } from 'react';
 
 import Container from '@/components/Container';
 import Page from '@/components/Page';
 import NewsStickyHeader from '@/components/NewsStickyHeader';
 
 import { newsData } from '@/mocks/news';
+import { newsCategories } from '@/mocks/newsCategories';
 import { formatToday } from '@/utils/date';
 import { Content, Section } from './styles';
 
 export default function News() {
   const categories = useMemo(
-    () => [...new Set(newsData.map((n) => n.category))],
+    () => [...newsCategories].sort((a, b) => a.order - b.order),
     [],
   );
 
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [activeCategory, setActiveCategory] = useState(categories[0].id);
   const [showCategoryBar, setShowCategoryBar] = useState(true);
   const lastScrollY = useRef(0);
   const scrollStartY = useRef(0);
   const scrollDirection = useRef<'up' | 'down'>('down');
-  // const SCROLL_THRESHOLD = 12;
-  // buttonRef.current.scrollIntoView({
-  //   behavior: 'smooth',
-  //   inline: 'center',
-  //   block: 'nearest',
-  // });
 
   // scroll behavior (hide/show bar)
   useEffect(() => {
@@ -62,7 +57,7 @@ export default function News() {
       lastScrollY.current = current;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [showCategoryBar]);
 
@@ -107,26 +102,37 @@ export default function News() {
 
           {categories.map((category) => (
             <Section
-              key={category}
-              data-category={category}
+              key={category.id}
+              data-category={category.id}
               ref={(el) => {
-                sectionRefs.current[category] = el;
+                sectionRefs.current[category.id] = el;
               }}
             >
-              <h3>{category}</h3>
+              <h3>{category.label}</h3>
               <div className="content">
                 {newsData
-                  .filter((n) => n.category === category)
-                  .map((item) => (
-                    <article key={item.id}>
-                      <div>
-                        <span>{item.source}</span>
-                        <p>{item.title}</p>
-                        <span>{item.time}</span>
-                      </div>
-                      <img src={item.image} />
-                    </article>
-                  ))}
+                  .filter((n) => n.categoryId === category.id)
+                  .map((item, index) =>
+                    index === 0 ? (
+                      <article key={item.id} className="newsFirstItem">
+                        <img src={item.image} />
+                        <div>
+                          <span>{item.source}</span>
+                          <p>{item.title}</p>
+                          <span>{item.time}</span>
+                        </div>
+                      </article>
+                    ) : (
+                      <article key={item.id} className="newsItem">
+                        <div>
+                          <span>{item.source}</span>
+                          <p>{item.title}</p>
+                          <span>{item.time}</span>
+                        </div>
+                        <img src={item.image} />
+                      </article>
+                    ),
+                  )}
               </div>
             </Section>
           ))}
