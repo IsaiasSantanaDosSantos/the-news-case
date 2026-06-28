@@ -1,47 +1,29 @@
-import { Container, Item, Icon, Label } from './styles';
+import { Container, Item, Label, IconWrapper } from './styles';
 import EditionIcon from '@/assets/icons/edition.svg?react';
 import HabitsIcon from '@/assets/icons/habits.svg?react';
 import WorldCupIcon from '@/assets/icons/world-cup.svg?react';
 import BooksIcon from '@/assets/icons/books.svg?react';
 import MoreIcon from '@/assets/icons/more.svg?react';
 
+const items = [
+  { label: 'edição', icon: EditionIcon },
+  { label: 'hábitos', icon: HabitsIcon },
+  { label: 'copa', icon: WorldCupIcon },
+  { label: 'livros', icon: BooksIcon },
+  { label: 'mais', icon: MoreIcon },
+];
+
 export default function Navigation() {
   return (
     <Container>
-      <Item>
-        <Icon>
-          <EditionIcon />
-        </Icon>
-        <Label>edição</Label>
-      </Item>
-
-      <Item>
-        <Icon>
-          <HabitsIcon />
-        </Icon>
-        <Label>hábitos</Label>
-      </Item>
-
-      <Item>
-        <Icon>
-          <WorldCupIcon />
-        </Icon>
-        <Label>copa</Label>
-      </Item>
-
-      <Item>
-        <Icon>
-          <BooksIcon />
-        </Icon>
-        <Label>livros</Label>
-      </Item>
-
-      <Item>
-        <Icon>
-          <MoreIcon />
-        </Icon>
-        <Label>mais</Label>
-      </Item>
+      {items.map(({ label, icon: Icon }) => (
+        <Item key={label}>
+          <IconWrapper>
+            <Icon />
+          </IconWrapper>
+          <Label>{label}</Label>
+        </Item>
+      ))}
     </Container>
   );
 }
