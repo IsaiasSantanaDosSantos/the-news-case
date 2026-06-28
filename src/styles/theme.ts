@@ -1,7 +1,7 @@
-import { colors, spacing, radius, shadow, typography, layout } from './tokens';
+import { spacing, radius, shadow, typography, layout } from './tokens';
+import { darkColors, lightColors } from './colors';
 
-export const theme = {
-  colors,
+export const baseTheme = {
   spacing,
   radius,
   shadow,
@@ -10,11 +10,13 @@ export const theme = {
 };
 
 export const lightTheme = {
-  ...theme,
+  ...baseTheme,
+  colors: lightColors,
   mode: 'light',
 };
 
 export const darkTheme = {
-  ...theme,
+  ...baseTheme,
+  colors: darkColors,
   mode: 'dark',
 };
