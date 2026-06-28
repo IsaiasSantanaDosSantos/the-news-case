@@ -50,6 +50,18 @@ export const Icon = styled.div`
   }
 `;
 
+export const IconWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${({ theme }) => theme.colors.text.secondary};
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
 export const Label = styled.span`
   font-size: ${({ theme }) => theme.typography.size.xs};
   font-weight: ${({ theme }) => theme.typography.weight.medium};
