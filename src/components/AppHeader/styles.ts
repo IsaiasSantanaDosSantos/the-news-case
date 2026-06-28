@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
+  position: sticky;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 48px 1fr auto;
   align-items: center;
@@ -11,8 +14,7 @@ export const Wrapper = styled.header`
   padding-inline: ${({ theme }) => theme.spacing[4]};
 
   background: ${({ theme }) => theme.colors.background};
-
-  // border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  z-index: 99;
 `;
 
 export const Left = styled.div`
