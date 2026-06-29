@@ -208,9 +208,7 @@ https://the-news-case-pi.vercel.app/
 
 ### Documentação do case
 
-```
-docs/case-study.md
-```
+https://github.com/IsaiasSantanaDosSantos/the-news-case/tree/main/docs
 
 ---
 
