@@ -218,7 +218,7 @@ docs/case-study.md
 
 ## News
 
-![News](./docs/img/news-original.png)
+![News](./docs/img/news-screens.png)
 
 ---
 
