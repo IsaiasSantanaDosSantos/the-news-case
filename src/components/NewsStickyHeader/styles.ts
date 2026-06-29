@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: sticky;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Switcher = styled.div<{ $visible: boolean }>`
   position: relative;
 
-  height: ${({ $visible }) => ($visible ? '58px' : '2px')};
+  height: ${({ $visible }) => ($visible ? "58px" : "2px")};
   overflow: hidden;
   transition: height 300ms ease;
 
@@ -24,17 +24,26 @@ export const Header = styled.header`
 `;
 
 export const DateText = styled.span`
-  font-size: 33px;
   text-transform: capitalize;
   color: ${({ theme }) => theme.colors.text.primary};
   text-transform: lowercase;
   font-weight: ${({ theme }) => theme.typography.weight.bold};
   line-height: ${({ theme }) => theme.typography.lineHeight.tight};
   letter-spacing: -1px;
+
+  font-size: clamp(
+    ${({ theme }) => theme.typography.size.xs},
+    7vw,
+    ${({ theme }) => theme.typography.size["3xl"]}
+  );
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const CategoryBar = styled.div.attrs({
-  role: 'tablist',
+  role: "tablist"
 })<{ $visible: boolean }>`
   position: absolute;
 
@@ -58,9 +67,9 @@ export const CategoryBar = styled.div.attrs({
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
 
-  transform: translateY(${({ $visible }) => ($visible ? '0' : '-16px')});
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "-16px")});
 
-  pointer-events: ${({ $visible }) => ($visible ? 'auto' : 'none')};
+  pointer-events: ${({ $visible }) => ($visible ? "auto" : "none")};
 
   transition:
     opacity 0.28s ease,

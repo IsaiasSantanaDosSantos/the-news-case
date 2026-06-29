@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Content = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ export const Section = styled.section`
     background-color: ${({ theme }) => theme.colors.foreground};
 
     img {
-      max-height: 230px;
+      max-height: 180px;
       width: 100%;
       object-fit: cover;
     }
